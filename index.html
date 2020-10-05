@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1, shrink-to-fit=no"> 
+    <meta name="description" content>
+    <meta name="author" content>
+    <link rel="stylesheet" href="styles.css">
+    <title>Otis Parsons</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+
+<!-- Profile Picture-->    
+<div>
+    <img  class="img-profile" src="Images/Otis Face .png" alt= "Otis Face picture">
+</div>
+
+<div>
+    <header> 
+        <h1>Otis Parsons</h1>
+        <h5>Software Engineer / Business Manager</h5>
+    </header>
+</div>
+
+<div class="sidenav">
+    <a href="aboutme.html">About Me</a>
+    <a href="work.html">Work</a>
+    <a href="https://www.linkedin.com/in/otis-parsons/" class="fa fa-linkedin"></a>
+    <a href="https://github.com/otisparsons" class="fa fa-github"></a>
+  </div>
+ 
+  
+
+
+
+  <div style="margin-left:25%">
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="Images/space purple.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="Images/blue space.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="Images/space 3" style="width:100%">
+      <div class="text"></div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+
+
+</body>
+

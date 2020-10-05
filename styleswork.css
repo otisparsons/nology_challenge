@@ -1,0 +1,73 @@
+h1{
+    color:whitesmoke;
+    font-family: Tahoma;
+    margin-top: .5cm;
+}
+
+img{
+   border-radius: 40%;
+   width: 7%;
+   height: auto;
+   margin-left: .55cm; 
+}
+
+
+.fa{
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 40%;
+    background:gray;
+    color: white;
+    margin-left: .2cm;
+    margin-top: 2.8cm;
+    top: 10;
+}
+
+
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: -1; 
+    left: 0;
+    background-color: g; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    font-family: Tahoma;
+  }
+
+  /* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color:whitesmoke;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color:springgreen;
+  }
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+
+
+  h5{
+    color: #818181;
+      font-family: arial;
+      font-style: italic;
+      font-size: 20;
+    }
+
+    body{
+      background:linear-gradient(to right, #0f2027, #203a43, #2c5364); 
+    }
