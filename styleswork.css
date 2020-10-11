@@ -71,3 +71,60 @@ img{
     body{
       background:linear-gradient(to right, #0f2027, #203a43, #2c5364); 
     }
+
+  
+#game{
+    width:500px;
+    height:200px;
+    border: 1px solid lightseagreen;
+    margin: auto;
+    
+}
+#character{
+    width: 20px;
+    height: 50px;
+    background-color: whitesmoke;
+    position:relative;
+    top: 150px;
+    
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+
+#block{
+    width:20px;
+    height:20px;
+    background-color:lightseagreen;
+    position: relative;
+    top:130px;
+    left:500px;
+    animation: block 1.5s linear;
+}
+@keyframes block{
+    0%{left:500px;}
+    100%{left:-20px;}
+}
+
+p{ 
+  text-align: center;
+
+}
+
+
+h6{
+  color: whitesmoke;
+    font-family: arial;
+    font-style: italic;
+    font-size: 18px;
+    margin-left: 15.7cm;
+
+  }
